@@ -1,0 +1,20 @@
+name: BirdLibraryApi
+version: 1.0.0
+main: com.bird.birdlibraryapi.BirdLibraryApi
+api-version: '1.20'
+author: Bird
+description: >
+  JavaScript scripting engine for Paper. Drop .js files into plugins/BirdApi
+  and write events/commands in real JavaScript via GraalJS, with direct
+  access to the Bukkit API.
+
+commands:
+  birdlib:
+    description: Manage BirdLibraryApi scripts
+    usage: /birdlib reload [file name]
+    aliases: [birdapi]
+
+permissions:
+  birdlib.reload:
+    description: Allows reloading scripts (all or a single file)
+    default: op
